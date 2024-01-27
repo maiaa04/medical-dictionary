@@ -40,7 +40,6 @@ def search(dictionary, term):
             definition = dictionary[key]
             if key not in other_terms:
                 other_terms.append(key)
-    # this part is fine - leave it
     for key, value in dictionary.items():
         if term in value or term_lower in value or term_upper in value:
             if key not in other_terms:
