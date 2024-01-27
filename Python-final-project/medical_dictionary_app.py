@@ -25,7 +25,7 @@ class MedicalDictionaryApp(customtk.CTk):
         # image/logo
         logo = customtk.CTkImage(light_image=Image.open('medical_dict_light.png'),
                                  dark_image=Image.open('medical_dict_dark.png'),
-                                 size=(300, 180))
+                                 size=(180, 180))
         label1 = customtk.CTkLabel(master=main_frame, image=logo, text='')
         label1.grid(row=0, column=0, padx=0, pady=5)
 
