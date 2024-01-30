@@ -25,19 +25,15 @@ def search(dictionary, term):
     term_upper = term.upper()
     other_terms = []
     if term in dictionary.keys():
-        definition = dictionary[term]
         other_terms.append(term)
     for key in dictionary:
         if term in key:
-            definition = dictionary[key]
             if key not in other_terms:
                 other_terms.append(key)
         if term_lower in key:
-            definition = dictionary[key]
             if key not in other_terms:
                 other_terms.append(key)
         if term_upper in key:
-            definition = dictionary[key]
             if key not in other_terms:
                 other_terms.append(key)
     for key, value in dictionary.items():
